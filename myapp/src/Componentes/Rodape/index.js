@@ -1,9 +1,9 @@
 import React from "react";
 import "./rodape.css";
-import Logo from "../../Assets/logo.png"
+import Logo from "../../Assets/logo.png";
 import Facebook from "../../Assets/facebook.png";
-import Twitter from "../../Assets/twitter.png"
-import LinkedIn from "../../Assets/linkedin.png"
+import Twitter from "../../Assets/twitter.png";
+import LinkedIn from "../../Assets/linkedin.png";
 import Dribble from "../../Assets/dribble.png";
 import Behance from "../../Assets/behance.png";
 import GooglePlus from "../../Assets/google-plus.png";
@@ -24,7 +24,7 @@ function Rodape({ mode, changeColorFooter }) {
         <img src={Behance} alt="Behance" />
         <img src={GooglePlus} alt="Google Plus" />
       </div>
-      <p className={"copyright " + (changeColorFooter)}>
+      <p className={"copyright " + changeColorFooter}>
         Copyright 2023 <span>Renan Luiz</span>
       </p>
     </footer>
