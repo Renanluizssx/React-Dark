@@ -1,38 +1,35 @@
-
 * {
-  margin:0px;
-  padding:0px;
-  box-sizing:border-box;
-  font-family: 'Poppins', sans-serif;
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
 }
 .modo-claro {
-    background-color: #fff;
+  background-color: #fff;
 }
 .modo-escuro {
-    background-color: black ;
-    
+  background-color: black;
 }
 .secao-corEscuroSXT {
-  
   background-color: #393838;
-  width:100%;
-  height:100%;
+  width: 100%;
+  height: 100%;
 }
 
 .secao-corClaroSXT {
-  background-color:#f4f4f4
+  background-color: #f4f4f4;
 }
 .button-modo-claro {
-    background-color:white;
-    border:none;
+  background-color: white;
+  border: none;
 }
 .button-modo-escuro {
-    background-color:black;
-    border: none;
+  background-color: black;
+  border: none;
 }
 .branco {
-  color:black;
+  color: black;
 }
 .preto {
-  color:white;
+  color: white;
 }
