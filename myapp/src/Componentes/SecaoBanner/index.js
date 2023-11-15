@@ -1,6 +1,6 @@
 import React from "react";
 import "./secao-banner.css";
-import Banner from "../../Assets/banner.png"
+import Banner from "../../Assets/banner.png";
 function SecaoBanner({ mode }) {
   return (
     <div className={mode}>
@@ -10,12 +10,11 @@ function SecaoBanner({ mode }) {
         </div>
         <div className="content-technology">
           <div className="content">
-          <p>BRANDING / UI / UX / TECNOLOGIA</p>
-          <p>Agência de Branding</p>
-          <p>e design digital</p>
+            <p>BRANDING / UI / UX / TECNOLOGIA</p>
+            <p>Agência de Branding</p>
+            <p>e design digital</p>
           </div>
         </div>
-
       </section>
     </div>
   );
