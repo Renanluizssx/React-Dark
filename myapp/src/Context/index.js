@@ -11,6 +11,7 @@ export const Context = ({ children }) => {
   const changeBackgroundButton = () =>
     mode === "modo-claro" ? "button-modo-claro" : "button-modo-escuro";
   const changeIcons = () => (mode === "modo-claro" ? moon : sun);
+
   const changeBackgroundSXT = () =>
     mode === "modo-claro" ? "secao-corClaroSXT" : "secao-corEscuroSXT";
   const changeLetter = () => (mode === "modo-claro" ? "branco" : "preto");

@@ -2,6 +2,7 @@ import React, { useContext } from "react";
 import "./topo.css";
 import Logo from "../../Assets/logo.png";
 import { UsarContext } from "../../Context";
+
 function Topo() {
   const { changeIcons, changeBackgroundButton, mode, setmode } =
     useContext(UsarContext);
@@ -14,9 +15,9 @@ function Topo() {
         <div>
           <img className="logo" src={Logo} alt="Logo" />
         </div>
-        <button className={changeBackgroundButton} onClick={verificarEstado}>
+        <button className={changeBackgroundButton()} onClick={verificarEstado}>
           <div>
-            <img src={changeIcons} className="botao" alt="moon" />
+            <img src={changeIcons()} className="botao" alt="moon" />
           </div>
         </button>
       </header>

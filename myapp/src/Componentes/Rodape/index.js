@@ -14,7 +14,7 @@ function Rodape() {
   return (
     <footer className={mode}>
       <img className="Logo" src={Logo} alt="Logo" />
-      <p className={changeColorFooter}>
+      <p className={changeColorFooter()}>
         Ajudamos a criar uma personalidade digital construindo sua marca no
         ambiente online utilizando estratégias, ferramentas e tecnologias
         personalizadas.
@@ -27,7 +27,7 @@ function Rodape() {
         <img src={Behance} alt="Behance" />
         <img src={GooglePlus} alt="Google Plus" />
       </div>
-      <p className={"copyright " + changeColorFooter}>
+      <p className={"copyright " + changeColorFooter()}>
         Copyright 2023 <span>Renan Luiz</span>
       </p>
     </footer>
