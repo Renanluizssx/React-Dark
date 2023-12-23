@@ -1,8 +1,10 @@
 import React from "react";
-
+import { useContext } from "react";
+import { UsarContext } from "../../Context";
 import Card from "../Card";
 import "./secao-experiencia-trabalho.css";
-function SecaoExperienciaTrabalho({ mode, changeBackgroundSXT, changeLetter }) {
+function SecaoExperienciaTrabalho() {
+  const { mode, changeBackgroundSXT, changeLetter } = useContext(UsarContext);
   return (
     <section className={`secao-experiencia-trabalho ${changeBackgroundSXT}`}>
       <div className="content-text">

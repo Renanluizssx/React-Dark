@@ -1,7 +1,11 @@
 import React from "react";
 import "./secao-banner.css";
 import Banner from "../../Assets/banner.png";
-function SecaoBanner({ mode }) {
+import { useContext } from "react";
+import { UsarContext } from "../../Context";
+function SecaoBanner() {
+  const { mode } = useContext(UsarContext);
+
   return (
     <div className={mode}>
       <section className="secao-banner">

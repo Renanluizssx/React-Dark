@@ -1,7 +1,11 @@
-import React from "react";
+import React, { useContext } from "react";
 import "./topo.css";
 import Logo from "../../Assets/logo.png";
-function Topo({ mode, setmode, changeIcons, changeBackgroundButton }) {
+import { UsarContext } from "../../Context";
+function Topo() {
+  const { changeIcons, changeBackgroundButton, mode, setmode } =
+    useContext(UsarContext);
+
   const verificarEstado = () =>
     mode === "modo-claro" ? setmode("modo-escuro") : setmode("modo-claro");
   return (

@@ -7,7 +7,10 @@ import LinkedIn from "../../Assets/linkedin.png";
 import Dribble from "../../Assets/dribble.png";
 import Behance from "../../Assets/behance.png";
 import GooglePlus from "../../Assets/google-plus.png";
-function Rodape({ mode, changeColorFooter }) {
+import { useContext } from "react";
+import { UsarContext } from "../../Context";
+function Rodape() {
+  const { mode, changeColorFooter } = useContext(UsarContext);
   return (
     <footer className={mode}>
       <img className="Logo" src={Logo} alt="Logo" />
