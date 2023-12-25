@@ -10,7 +10,9 @@ import GooglePlus from "../../Assets/google-plus.png";
 import { useContext } from "react";
 import { UsarContext } from "../../Context";
 function Rodape() {
-  const { mode, changeColorFooter } = useContext(UsarContext);
+  const { mode } = useContext(UsarContext);
+  const changeColorFooter = () =>
+    mode === "modo-claro" ? "cor-claro" : "cor-escuro";
   return (
     <footer className={mode}>
       <img className="Logo" src={Logo} alt="Logo" />

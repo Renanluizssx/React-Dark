@@ -4,8 +4,9 @@ import Logo from "../../Assets/logo.png";
 import { UsarContext } from "../../Context";
 
 function Topo() {
-  const { changeIcons, changeBackgroundButton, mode, setmode } =
-    useContext(UsarContext);
+  const changeBackgroundButton = () =>
+    mode === "modo-claro" ? "button-modo-claro" : "button-modo-escuro";
+  const { changeIcons, mode, setmode } = useContext(UsarContext);
 
   const verificarEstado = () =>
     mode === "modo-claro" ? setmode("modo-escuro") : setmode("modo-claro");

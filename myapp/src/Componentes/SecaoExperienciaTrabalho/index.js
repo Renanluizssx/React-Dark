@@ -4,7 +4,9 @@ import { UsarContext } from "../../Context";
 import Card from "../Card";
 import "./secao-experiencia-trabalho.css";
 function SecaoExperienciaTrabalho() {
-  const { mode, changeBackgroundSXT, changeLetter } = useContext(UsarContext);
+  const changeBackgroundSXT = () =>
+    mode === "modo-claro" ? "secao-corClaroSXT" : "secao-corEscuroSXT";
+  const { mode, changeLetter } = useContext(UsarContext);
   return (
     <section className={`secao-experiencia-trabalho ${changeBackgroundSXT()}`}>
       <div className="content-text">
