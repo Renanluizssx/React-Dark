@@ -1,8 +1,8 @@
 import React from "react";
-import "./secao-banner.css";
-import Banner from "../../Assets/banner.png";
+import "./SecaoBanner.css";
+import Banner from "../../assets/banner.png";
 import { useContext } from "react";
-import { UsarContext } from "../../Context";
+import { UsarContext } from "../../context/Mode.js";
 function SecaoBanner() {
   const { mode } = useContext(UsarContext);
 

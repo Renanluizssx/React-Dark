@@ -1,8 +1,8 @@
 import React from "react";
 import { useContext } from "react";
-import { UsarContext } from "../../Context";
-import Card from "../Card";
-import "./secao-experiencia-trabalho.css";
+import { UsarContext } from "../../context/Mode";
+import Card from "../card/Card";
+import "./SecaoExperienciaTrabalho.css";
 function SecaoExperienciaTrabalho() {
   const changeBackgroundSXT = () =>
     mode === "modo-claro" ? "secao-corClaroSXT" : "secao-corEscuroSXT";

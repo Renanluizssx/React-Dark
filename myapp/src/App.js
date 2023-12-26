@@ -1,13 +1,11 @@
-import React, { useState } from "react";
-import Topo from "./Componentes/Topo";
-import SecaoBanner from "./Componentes/SecaoBanner";
-import SecaoExperienciaTrabalho from "./Componentes/SecaoExperienciaTrabalho";
-import Footer from "./Componentes/Rodape";
+import React from "react";
+import Topo from "./componentes/topo/Topo.js";
+import SecaoBanner from "./componentes/secaoBanner/SecaoBanner.js";
+import SecaoExperienciaTrabalho from "./componentes/secaoExperienciaTrabalho/SecaoExperienciaTrabalho.js";
+import Rodape from "./componentes/rodape/Rodape.js";
 import "./App.css";
-import { Context } from "./Context";
+import { Context } from "./context/Mode.js";
 function App() {
-  // const [mode, setmode] = useState("modo-claro");
-
   return (
     <div className="App">
       <Context>
@@ -15,7 +13,7 @@ function App() {
         <main>
           <SecaoBanner />
           <SecaoExperienciaTrabalho />
-          <Footer />
+          <Rodape />
         </main>
       </Context>
     </div>

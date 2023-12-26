@@ -1,6 +1,6 @@
 import React from "react";
-import "./card.css";
-import { UsarContext } from "../../Context";
+import "./Card.css";
+import { UsarContext } from "../../context/Mode";
 import { useContext } from "react";
 function Card() {
   const { changeLetter } = useContext(UsarContext);

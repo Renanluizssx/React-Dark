@@ -1,9 +1,9 @@
 import React, { useContext } from "react";
-import "./topo.css";
-import Logo from "../../Assets/logo.png";
-import { UsarContext } from "../../Context";
-import sun from "../../Assets/sun.png";
-import moon from "../../Assets/moon.png";
+import "./Topo.css";
+import Logo from "../../assets/logo.png";
+import { UsarContext } from "../../context/Mode.js";
+import sun from "../../assets/sun.png";
+import moon from "../../assets/moon.png";
 function Topo() {
   const changeIcons = () => (mode === "modo-claro" ? moon : sun);
   const changeBackgroundButton = () =>

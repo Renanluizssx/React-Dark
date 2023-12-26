@@ -1,14 +1,14 @@
 import React from "react";
-import "./rodape.css";
-import Logo from "../../Assets/logo.png";
-import Facebook from "../../Assets/facebook.png";
-import Twitter from "../../Assets/twitter.png";
-import LinkedIn from "../../Assets/linkedin.png";
-import Dribble from "../../Assets/dribble.png";
-import Behance from "../../Assets/behance.png";
-import GooglePlus from "../../Assets/google-plus.png";
+import "./Rodape.css";
+import Logo from "../../assets/logo.png";
+import Facebook from "../../assets/facebook.png";
+import Twitter from "../../assets/twitter.png";
+import LinkedIn from "../../assets/linkedin.png";
+import Dribble from "../../assets/dribble.png";
+import Behance from "../../assets/behance.png";
+import GooglePlus from "../../assets/google-plus.png";
 import { useContext } from "react";
-import { UsarContext } from "../../Context";
+import { UsarContext } from "../../context/Mode.js";
 function Rodape() {
   const { mode } = useContext(UsarContext);
   const changeColorFooter = () =>
